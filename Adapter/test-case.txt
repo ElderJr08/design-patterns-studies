@@ -1,0 +1,4 @@
+O novo objeto é denominado AdvancedShipping e tem uma interface muito diferente 
+que o programa cliente não espera. O ShippingAdapter permite que o programa 
+cliente continue funcionando sem nenhuma alteração de API, mapeando (adaptando) 
+a interface antiga de Remessa para a nova interface AdvancedShipping.

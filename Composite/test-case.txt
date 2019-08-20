@@ -1,0 +1,37 @@
+ESTRUTURA/EXEMPLO
+
+Suponha que tenhamos um questionário formado de questões, que podem estar agrupadas 
+em blocos e blocos podem conter outros blocos. Podemos então ter a estrutura a 
+seguir para um questionário:
+
+Bloco A
+—– Q1
+—– Q2
+—– Q3
+Bloco B
+—– Bloco B1
+———- Q4
+———- Q5
+—– Bloco B2
+———- Q6
+—– Q7
+
+Além da flexibilidade mostrada acima, queremos um meio fácil de exibir essa 
+estrutura em tela/página, sem ter que nos preocupar se estamos exibindo um bloco 
+ou uma questão.
+
+Dentro da estrutura do Composite, temos 3 participantes:
+
+O Componente (ElementoDoQuestionario): é a interface que define métodos comuns às 
+classes dentro da composição e, opcionalmente, define uma interface para acessar o 
+objeto “pai” de um componente.
+
+A Folha (Questao) é um componente que, como o nome indica, não possui filhos 
+(está nas extremidades da árvore).
+
+O Composto (Bloco) é um componente que, como o nome indica, é composto de outros 
+componentes, que podem ser folhas ou outros compostos.
+
+Notem no questionário acima que o Bloco B possui 3 filhos: 2 blocos (B1 e B2) e 
+uma questão (Q7). Por sua vez, B1 possui 2 filhos (Q4 e Q5) e B2 possui um filho 
+(Q6).

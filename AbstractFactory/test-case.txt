@@ -1,0 +1,6 @@
+No exemplo, temos duas fábricas de concreto: EmployeeFactory e VendorFactory. 
+O primeiro cria instâncias de funcionários, o segundo instâncias de fornecedor. 
+Ambos os produtos são tipos de pessoa (com a mesma interface) que permitem ao 
+cliente tratá-los da mesma forma. Uma matriz com dois funcionários e dois 
+fornecedores é criada. 
+Cada pessoa é então solicitada a dizer o que e quem são.

@@ -1,0 +1,9 @@
+Em nosso exemplo, uma estrutura em árvore é criada a partir de objetos Node. 
+Cada nó tem um nome e 4 métodos: add, remove, getChild e hasChildren. 
+Os métodos são adicionados ao protótipo do nó. Isso reduz os requisitos de memória, 
+pois esses métodos agora são compartilhados por todos os nós. O nó é totalmente 
+recursivo e não há necessidade de objetos Component ou Leaf separados.
+
+Uma pequena árvore composta é construída adicionando nós aos nós pais. Uma vez 
+concluído, invocamos a travessia que percorre cada nó da árvore e exibe seu nome 
+e profundidade (mostrando o recuo).
